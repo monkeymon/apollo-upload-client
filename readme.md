@@ -1,3 +1,5 @@
+## This is a fork from the original plugin [jaydenseric/apollo-upload-client](https://github.com/jaydenseric/apollo-upload-client) and only add typescript defination file
+
 ![Apollo upload logo](https://cdn.rawgit.com/jaydenseric/apollo-upload-client/27b1f20/apollo-upload-logo.svg)
 
 # apollo-upload-client
