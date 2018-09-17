@@ -1,5 +1,32 @@
 # apollo-upload-client changelog
 
+## Next
+
+### Major
+
+- Made [`apollo-link`](https://npm.im/apollo-link) a dependency, instead of a peer dependency.
+- Ship `.mjs` files again for ESM. This time, there are no named imports from CJS dependencies, following the Node.js `--experimental-modules` behavior.
+
+### Minor
+
+- Updated Babel, removing the [`@babel/runtime`](https://npm.im/@babel/runtime) dependency.
+- Package [marked side-effect free](https://webpack.js.org/guides/tree-shaking#mark-the-file-as-side-effect-free) for bundlers and tree-shaking.
+
+### Patch
+
+- Updated dependencies.
+- Use the new [`extract-files`](https://npm.im/extract-files) API.
+- Use [`jsdoc-md`](https://npm.im/jsdoc-md) to generate readme API docs from source JSDoc, which has been improved.
+- Readme examples updated to use the [`react-apollo`](https://npm.im/react-apollo) `Mutation` component instead of the `graphql` decorator.
+- Updated package description.
+- Added package tags.
+- Added a package `test:size` script, using [`size-limit`](https://npm.im/size-limit) to guarantee < 1 KB ESM and CJS bundle sizes.
+- Lint `.yml` files.
+- Refactored package scripts and removed the [`npm-run-all`](https://npm.im/npm-run-all) dev dependency.
+- Removed a temporary workaround for [a fixed Babel CLI bug](https://github.com/babel/babel/issues/8077).
+- Ensure the readme Travis build status badge only tracks `master` branch.
+- Use [Badgen](https://badgen.net) for the readme npm version badge.
+
 ## 8.1.0
 
 - Updated dependencies.
@@ -246,7 +273,7 @@
 
 ## 3.0.0
 
-- Support `apollo-upload-server` v2 and [query batching](https://apollographql.com/docs/apollo-server/requests.html#batching).
+- Support `apollo-upload-server` v2 and [query batching](https://apollographql.com/docs/apollo-server/requests#batching).
 - Removed the seemingly redundant `Accept` header from requests.
 - Clearer package description.
 
